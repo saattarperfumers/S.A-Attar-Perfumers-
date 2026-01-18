@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.A Attar & Perfumers</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Luxury attars and perfumes crafted with tradition, purity, and elegance." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-dark:#0b0b0b;
+      --bg-soft:#111;
+      --gold:#c9a24d;
+      --gold-soft:#e0c47a;
+      --text:#f5f5f5;
+      --muted:#b5b5b5;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:'Inter',sans-serif;
+      background:radial-gradient(circle at top, #151515, #070707);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 6vw;
+      position:sticky;
+      top:0;
+      background:rgba(0,0,0,.6);
+      backdrop-filter:blur(10px);
+      z-index:10;
+    }
+
+    header img{
+      height:64px;
+      filter:drop-shadow(0 0 12px rgba(201,162,77,.6));
+    }
+
+    nav a{
+      margin-left:28px;
+      text-decoration:none;
+      color:var(--muted);
+      font-weight:500;
+      position:relative;
+    }
+
+    nav a::after{
+      content:"";
+      position:absolute;
+      bottom:-6px;
+      left:0;
+      width:0;
+      height:2px;
+      background:var(--gold);
+      transition:.3s;
+    }
+
+    nav a:hover{color:var(--text)}
+    nav a:hover::after{width:100%}
+
+    .hero{
+      min-height:90vh;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:0 6vw;
+    }
+
+    .hero h1{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2.6rem,5vw,4.2rem);
+      letter-spacing:2px;
+      margin-bottom:20px;
+      background:linear-gradient(180deg, var(--gold-soft), var(--gold));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin:0 auto 40px;
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    .cta{
+      padding:14px 40px;
+      border-radius:40px;
+      border:1px solid var(--gold);
+      background:transparent;
+      color:var(--gold);
+      font-size:1rem;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    .cta:hover{
+      background:var(--gold);
+      color:#000;
+      box-shadow:0 0 25px rgba(201,162,77,.6);
+    }
+
+    section{
+      padding:100px 6vw;
+    }
+
+    .section-title{
+      text-align:center;
+      font-family:'Playfair Display',serif;
+      font-size:2.2rem;
+      margin-bottom:20px;
+      color:var(--gold-soft);
+    }
+
+    .section-sub{
+      text-align:center;
+      max-width:700px;
+      margin:0 auto 70px;
+      color:var(--muted);
+    }
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:40px;
+    }
+
+    .card{
+      background:linear-gradient(180deg, #141414, #0c0c0c);
+      border:1px solid rgba(201,162,77,.15);
+      border-radius:22px;
+      padding:40px 30px;
+      text-align:center;
+      transition:.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border-color:var(--gold);
+      box-shadow:0 20px 40px rgba(0,0,0,.6);
+    }
+
+    .card h3{
+      color:var(--gold);
+      margin-bottom:14px;
+    }
+
+    .card p{
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    footer{
+      background:#050505;
+      border-top:1px solid rgba(255,255,255,.05);
+      padding:50px 6vw;
+      text-align:center;
+      color:var(--muted);
+    }
+
+    footer strong{color:var(--gold)}
+
+    .whatsapp{
+      position:fixed;
+      bottom:24px;
+      right:24px;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      background:#25d366;
+      display:grid;
+      place-items:center;
+      box-shadow:0 10px 30px rgba(0,0,0,.6);
+      z-index:20;
+    }
+
+    .whatsapp img{width:30px;height:30px}
+
+    @media(max-width:768px){
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Logos.png" alt="S.A Attar & Perfumers Logo" />
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>S.A Attar & Perfumers</h1>
+    <p>Luxury attars and perfumes inspired by heritage, crafted with purity, and designed for those who value timeless elegance.</p>
+    <a href="#products" class="cta" style="display:inline-block;text-decoration:none">Explore Our World</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About S.A Attar & Perfumers</h2>
+  <p class="section-sub">S.A Attar & Perfumers is dedicated to offering authentic attars and perfumes crafted for men and women who appreciate purity, depth, and timeless fragrance. From classic musk families to rich oriental blends, each creation is designed to leave a lasting impression.</p>
+</section>
+
+
+
+<section id="products">
+  <div style="text-align:center;margin-bottom:40px">
+    <input id="searchInput" placeholder="Search attars or perfumes..." style="padding:12px 18px;border-radius:30px;width:260px;max-width:90%" onkeyup="searchProducts()" />
+    <div style="margin-top:20px">
+      <button class="cta" onclick="filterCategory('all')">All</button>
+      <button class="cta" onclick="filterCategory('attar')">Attars</button>
+      <button class="cta" onclick="filterCategory('perfume')">Perfumes</button>
+      <button class="cta" onclick="filterCategory('men')">Men</button>
+      <button class="cta" onclick="filterCategory('women')">Women</button>
+    </div>
+  </div>
+  <h2 class="section-title">Discover Your Signature Fragrance</h2>
+  <p class="section-sub">Choose your fragrance, select size, view price, and order instantly on WhatsApp.</p>
+
+  <div class="features">
+    <!-- PRODUCT CARD -->
+    <div class="card product" data-category="perfume men" onclick="openProduct()">
+        <img src="IMG-20260118-WA0004.jpg" style="width:100%;border-radius:14px;margin-bottom:14px" />
+          <h3>CR 7 Perfume</h3>
+            <p>Perfume</p>
+              <p style="font-size:.85rem">Click to view details</p>
+              </div>
+
+</section>
+
+<!-- PRODUCT MODAL -->
+<div id="productModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:50;place-items:center">
+  <div style="background:#0c0c0c;border:1px solid rgba(201,162,77,.3);border-radius:20px;max-width:420px;width:90%;padding:30px;position:relative">
+    <button onclick="closeProduct()" style="position:absolute;top:12px;right:14px;background:none;border:none;color:#fff;font-size:20px;cursor:pointer">✕</button>
+
+    <h3 style="color:var(--gold)">CR 7</h3>
+    <p style="color:var(--muted)">A good man perfume with elegant smell</p>
+
+    <label style="display:block;margin:20px 0 10px">Only ₹415</label>
+   <br>with 17% discount 
+    
+
+    <p style="margin:20px 0"><strong>Price:</strong> ₹<span id="price">₹415</span></p>
+
+    <a id="orderBtn" class="cta" target="_blank" style="display:block;text-align:center">Order on WhatsApp</a>
+  </div>
+</div>
+
+<script>
+function openProduct(){
+  document.getElementById('productModal').style.display='grid';
+  updatePrice();
+}
+function closeProduct(){
+  document.getElementById('productModal').style.display='none';
+}
+function updatePrice(){
+  const select=document.getElementById('sizeSelect');
+  const price=select.value;
+  const text=select.options[select.selectedIndex].text;
+  document.getElementById('price').innerText=price;
+  document.getElementById('orderBtn').href=`https://wa.me/9170507424?text=Hello%2C%20I%20want%20to%20order%20CR20%7%20Attar%20(${text})`;
+}
+</script>
+
+<script>
+function searchProducts(){
+  const q=document.getElementById('searchInput').value.toLowerCase();
+  document.querySelectorAll('.product').forEach(p=>{
+    p.style.display=p.innerText.toLowerCase().includes(q)?'block':'none';
+  });
+}
+function filterCategory(cat){
+  document.querySelectorAll('.product').forEach(p=>{
+    p.style.display=(cat==='all'||p.dataset.category.includes(cat))?'block':'none';
+  });
+}
+</script>
+
+<section id="contact">
+  <h2 class="section-title">Contact with us </h2>
+  <p class="section-sub">For inquiries, collaborations, or orders, reach out directly.</p>
+  <p style="text-align:center"><strong>WhatsApp:</strong> 9170507424<br><strong>Email:</strong> saattarperfumers@gmail.com</p>
+</section>
+
+<footer>
+  <p><strong>S.A Attar & Perfumers</strong></p>
+  <p>Luxury Fragrance House</p>
+  <p>&copy; 2026 All Rights Reserved</p>
+  <p>Follow us on <a href="https://www.instagram.com/" target="sa_attar_perfumers">Instagram</a></p>
+  <p><a href="#terms">Terms & Conditions</a></p>
+</footer>
+
+<section id="terms">
+  <h2 class="section-title">Terms & Conditions</h2>
+  <p class="section-sub">
+
+  
+
+    Welcome to **S.A ATTAR & PERFUMERS**, where craftsmanship meets elegance. By using our website or purchasing our products, you agree to these Terms & Conditions. All attars and perfumes are authentic and curated with the highest quality standards. Visual representations are indicative; minor variations may occur. Prices and availability are subject to change without prior notice. Orders may be approved or declined at our discretion. Due to the nature of fragrances, opened products are non-returnable unless damaged or incorrect upon delivery and reported within 24 hours. Perform a patch test before use. 
+
+
+    
+  </p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/9170507424" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
